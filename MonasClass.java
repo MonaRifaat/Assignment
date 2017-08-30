@@ -1,6 +1,7 @@
 public class MonasClass {
 
 public static void main(String[] args) {
+		
 	if (args.length > 1)
 	{
 	   try {
@@ -29,11 +30,25 @@ public void PrintFirstAgrument(String Argument)
 	        if(num > 1)
 	        {
 		        for(int i=1; i<= num; i++)
-		        	System.out.println(i);
+		        {
+		        	if (i% 3 == 0)
+		        		System.out.println("Fizz");
+		        	else if (i%5 == 0)
+		        		System.out.println("Buzz");
+		        	else
+		        		System.out.println(i);
+		        }
 	        }
 	        else
 	        	for(int i=num; i<= 1; i++)
-		        	System.out.println(i);
+		        {
+	        		if (i% 3 == 0)
+		        		System.out.println("Fizz");
+		        	else if (i%5 == 0)
+		        		System.out.println("Buzz");
+		        	else
+		        		System.out.println(i);
+		        }
 	        	
 		}
 catch (NumberFormatException nfe) {
