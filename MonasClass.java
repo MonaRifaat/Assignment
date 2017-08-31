@@ -50,8 +50,8 @@ public void PrintFirstAgrument(String Argument)
 	        else
 			for(int i=num; i<= 1; i++)
 		        {
-					if ((i% 3 == 0) && (i%5 == 0))
-						System.out.println("FizzBuzz");
+				if ((i% 3 == 0) && (i%5 == 0))
+					System.out.println("FizzBuzz");
 	        		else if (i% 3 == 0)
 		        		System.out.println("Fizz");
 		        	else if (i%5 == 0)
